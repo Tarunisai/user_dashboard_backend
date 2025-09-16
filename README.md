@@ -20,60 +20,78 @@ backend/
 ## Live Deployment
 
 [The backend API is live at:
-https://your-backend-on-render.onrender.com/api/users]
+https://user-dashboard-backend-roc6.onrender.com/]
 
 ---
 
 ## API Endpoints
+### Backend Running
+
+- Here’s the screenshot showing the backend running on Render and returning all users from /api/users:
+
+(![Backend Running Screenshot](image.png))
+
 ### 1. Get All Users
 - URL: /api/users
 - Method: GET
 - Live Example: All Users
 Response Example:
 [
-  {
-    "id": 1,
-    "name": "Taruni",
-    "email": "taruni@example.com",
-    "phone": "7093659787",
-    "company": "Forty4 Technologies",
-    "street": "Dolphin Street",
-    "city": "Hyderabad",
-    "zipcode": "567987",
-    "lat": "12",
-    "lng": "11"
-  }
+    {
+        "id": 1,
+        "name": "Eleven",
+        "email": "eleven@example.com",
+        "phone": "9876543210",
+        "company": "Hawkins Labs",
+        "street": "Maple Street",
+        "city": "Hawkins",
+        "zipcode": "123456",
+        "lat": "40.7128",
+        "lng": "-74.0060"
+    },
+    {
+        "id": 2,
+        "name": "Mike Wheeler",
+        "email": "mikewheeler@example.com",
+        "phone": "9123456780",
+        "company": "Hawkins High School",
+        "street": "Oak Avenue",
+        "city": "Hawkins",
+        "zipcode": "123457",
+        "lat": "40.7130",
+        "lng": "-74.0058"
+    }
 ]
 
 
 Screenshot Placeholder:
-![All Users Screenshot](./screenshots/get_all_users.png)
+(![All Users Screenshot](image-1.png))
 
 ### 2. Get Single User
 
 - URL: /api/users/:id
 - Method: GET
 - Example:
-GET https://your-backend-on-render.onrender.com/api/users/1
+GET https://user-dashboard-backend-roc6.onrender.com/api/users/1
 
 Response Example:
 
 {
-  "id": 1,
-  "name": "Taruni",
-  "email": "taruni@example.com",
-  "phone": "7093659787",
-  "company": "Forty4 Technologies",
-  "street": "Dolphin Street",
-  "city": "Hyderabad",
-  "zipcode": "567987",
-  "lat": "12",
-  "lng": "11"
+   "id": 1,
+    "name": "Eleven",
+    "email": "eleven@example.com",
+    "phone": "9876543210",
+    "company": "Hawkins Labs",
+    "street": "Maple Street",
+    "city": "Hawkins",
+    "zipcode": "123456",
+    "lat": "40.7128",
+    "lng": "-74.0060"
 }
 
 
 Screenshot Placeholder:
-![Single User Screenshot](./screenshots/get_single_user.png)
+(![Single User Screenshot](image-2.png))
 
 ### 3. Create a New User
 
@@ -81,27 +99,27 @@ Screenshot Placeholder:
 - Method: POST
 - Request Body (JSON):
 {
-  "name": "John Doe",
-  "email": "john@example.com",
-  "phone": "9876543210",
-  "company": "Example Inc",
-  "street": "Main Street",
-  "city": "CityName",
-  "zipcode": "123456",
-  "lat": "10",
-  "lng": "20"
+    "name": "Dustin Henderson",
+    "email": "dustin@example.com",
+    "phone": "9234567890",
+    "company": "Hawkins High School",
+    "street": "Pine Road",
+    "city": "Hawkins",
+    "zipcode": "123458",
+    "lat": "40.7125",
+    "lng": "-74.0065"
 }
 
 Response Example:
 
 {
   "message": "User created successfully",
-  "id": 2
+  "id": 3
 }
 
 
 Screenshot Placeholder:
-![Create User Screenshot](./screenshots/create_user.png)
+(![Create User Screenshot](image-3.png))
 
 ### 4. Update a User
 
@@ -109,27 +127,25 @@ Screenshot Placeholder:
 - Method: PUT
 - Request Body (JSON):
 {
-  "name": "John Updated",
-  "email": "john.updated@example.com",
-  "phone": "9876543210",
-  "company": "Updated Inc",
-  "street": "Main Street",
-  "city": "CityName",
-  "zipcode": "123456",
-  "lat": "10",
-  "lng": "20"
+    "name": "Dustin Henderson Updated",
+    "email": "dustin@example.com",
+    "phone": "9234567890",
+    "company": "Hawkins High School",
+    "street": "Pine Road",
+    "city": "Hawkins",
+    "zipcode": "123458",
+    "lat": "40.7125",
+    "lng": "-74.0065"
 }
 
 
 Response Example:
-
 {
   "message": "User updated successfully"
 }
 
-
 Screenshot Placeholder:
-![Update User Screenshot](./screenshots/update_user.png)
+(![Update User Screenshot](image-4.png))
 
 ### 5. Delete a User
 
@@ -141,7 +157,7 @@ Screenshot Placeholder:
 }
 
 Screenshot Placeholder:
-![Delete User Screenshot](./screenshots/delete_user.png)
+(![Delete User Screenshot](image-5.png))
 
 ---
 
